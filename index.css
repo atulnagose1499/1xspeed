@@ -1,0 +1,225 @@
+/* basic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --button-color: #2e5b01;
+  --secondary-button-color: #5bb401;
+
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #13ff02;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* utility classes */
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.small-bold-text {
+  font-style: 1rem;
+  font-weight: bolder;
+}
+/* top banner */
+.top-banner {
+  background-image: url(./assets/asset\ 32.png);
+  background-color: var(--accent-color);
+  background-size: 300px;
+  /* background-repeat: no-repeat; */
+}
+.banner-text {
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+/* code-pen */
+
+.btn:link,
+.btn:visited {
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--button-color);
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+.card {
+  box-shadow: 0 20px 30px 10px #dbe4ff;
+  border-radius: 12px;
+}
+a {
+  text-decoration: none;
+}
+.course-card {
+  width: 380px;
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 50px auto;
+  background: #fafafa;
+}
+
+.badge {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  background: red;
+  color: #fff;
+  padding: 3px 10px;
+}
+
+.course-tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 50px;
+  background: #f0f0f0;
+}
+
+.course-tumb img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.course-details {
+  padding: 30px;
+}
+
+.course-catagory {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 18px;
+}
+
+.course-details h4 a {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.course-details h4 a:hover {
+  color: #fbb72c;
+}
+
+.course-details p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  color: #999;
+}
+
+.course-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.course-bottom-details div {
+  float: left;
+  width: 50%;
+}
+
+.course-price {
+  font-size: 18px;
+  color: #fbb72c;
+  font-weight: 600;
+}
+
+.course-price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.course-links {
+  text-align: right;
+}
+
+.course-links a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #e1e1e1;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.course-links a:hover {
+  color: #fbb72c;
+}
+/* code-pen end */
+
+header {
+  position: fixed;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Make the navbar take up the full width of the page */
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

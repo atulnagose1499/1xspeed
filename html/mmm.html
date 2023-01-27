@@ -1,0 +1,27 @@
+
+//Retrieving data from the database
+String[] projection = { "name", "age"};
+String selection = "age >= ?";
+String[] selectionArgs = {"25"};
+String sortOrder = "name DESC";
+
+Cursor cursor = getContentResolver().query(
+    Uri.parse("content://com.example.provider/table1"),
+    projection,
+    selection,
+    selectionArgs,
+    sortOrder);
+
+//Iterating through the data
+while (cursor.moveToNext()) {
+    String name = cursor.getString(cursor.getColumnIndex("name"));
+    int age = cursor.getInt(cursor.getColumnIndex("age"));
+    Log.d("Data", "Name: " + name + " Age: " + age);
+}
+cursor.close();
+
+//Inserting data into the database
+ContentValues values = new ContentValues();
+values.put("name", "John Doe");
+values.put("age", 30);
+getContentResolver().insert(Uri.parse("content://com.example.provider/table1"), values);

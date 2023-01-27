@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --button-color: #2e5b01;
+  --secondary-button-color: #5bb401;
+
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #30d425;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* utility classes */
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+  /* border: 1px solid red; */
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.small-bold-text {
+  font-style: 1rem;
+  font-weight: bolder;
+}
+/* top banner */
+.top-banner {
+  background-image: url(../assets/asset\ 32.png);
+  background-color: #a8b4f0;
+  background-size: 300px;
+  /* background-repeat: no-repeat; */
+}
+.banner-text {
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+/* HERO01 */
+
+.subject {
+  height: 200px;
+  width: 250px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 20px 30px 10px #dbe4ff;
+  border-radius: 12px;
+}
+.frame1 {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 35px;
+  margin: 5px;
+  padding: 60px 20px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #364fc7;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #d3dbf9;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+header {
+  position: fixed;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Make the navbar take up the full width of the page */
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
