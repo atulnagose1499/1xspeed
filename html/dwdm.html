@@ -45,7 +45,7 @@
         </div>
       </div>
     </header>
-    <br><br><br><br>
+    <br /><br /><br /><br />
     <section>
       <div class="container">
         <div class="frame1">
@@ -58,8 +58,2134 @@
           />.
         </div>
       </div>
+      <br /><br /><br /><br />
+      <div class="unitNo1">
+        <details>
+          <summary>1 1. Data Warehouse Fundamentals</summary>
+          <details>
+            <summary>1 1. Data Warehouse Fundamentals</summary>
+            <br />
+            <p>
+              A data warehouse is a large, centralized repository of data that
+              is used to support business intelligence (BI) and decision-making
+              processes. Data is typically extracted from various sources,
+              transformed to fit a consistent data model, and then loaded into
+              the warehouse for reporting and analysis. Data warehouses are
+              optimized for read-heavy workloads and support advanced querying
+              and reporting capabilities, such as data mining and OLAP (online
+              analytical processing). The fundamental concept of data
+              warehousing is to provide a single, consolidated view of an
+              organization's data, making it easily accessible to users across
+              the organization.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              1.1. Introduction to Data Warehouse, OLTP Systems; Differences
+              between OLTP Systems and Data Warehouse:
+            </summary>
+            <br />
+            <p>
+              A Data Warehouse (DW) is a central repository of data that is
+              specifically designed for reporting and analysis. It is optimized
+              for read-heavy workloads and enables users to run complex queries
+              and generate business insights. Data in a DW is typically stored
+              in a denormalized form, which allows for faster query performance,
+              but makes updates and inserts more complex.
+              <br /><br />
+              On the other hand, an Online Transaction Processing (OLTP) system
+              is a type of database system that is designed to support a high
+              volume of concurrent transactions. It is optimized for write-heavy
+              workloads, and enables users to perform insert, update and delete
+              operations on the data quickly. Data in an OLTP system is
+              typically stored in a normalized form, which reduces data
+              redundancy and increases data integrity, but can make queries more
+              complex.
+              <br /><br />
+              There are several key differences between OLTP systems and Data
+              Warehouse:
+              <br /><br />
+              Data Model: OLTP systems use a normalized data model, while Data
+              Warehouses use a denormalized data model.
+              <br /><br />
+              Data Volume: Data Warehouses are designed to handle large amounts
+              of historical data, while OLTP systems are designed to handle
+              current data.
+              <br /><br />
+              Query Performance: Data Warehouses are optimized for complex
+              queries, while OLTP systems are optimized for quick transaction
+              processing.
+              <br /><br />
+              Reporting and Analysis: Data Warehouses are designed for reporting
+              and analysis, while OLTP systems are designed for transaction
+              processing.
+              <br /><br />
+              Data Integration: Data Warehouses require data to be integrated
+              from multiple sources before it can be used, while OLTP systems
+              typically work with a single source of data.
+              <br /><br />
+              Data Latency: Data Warehouses typically have a higher data latency
+              than OLTP systems, as the data is often extracted from multiple
+              sources and then transformed before it is loaded into the DW.
+              <br /><br />
+              In summary, OLTP systems are optimized for transaction processing,
+              while Data Warehouses are optimized for reporting and analysis.
+              They are used to support different types of business needs and are
+              often used in conjunction with each other to support an
+              organization's data needs.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              1.2. Characteristics of Data Warehouse; Functionality of Data
+              Warehouse:
+            </summary>
+            <br />
+            <p>
+              Characteristics of a Data Warehouse:
+              <br /><br />
+              Subject-oriented: Data in a data warehouse is organized around
+              specific subjects, such as customer, product, or sales.
+              <br /><br />
+              Integrated: Data in a data warehouse is sourced from multiple
+              systems and is integrated to provide a consistent view of the
+              data.
+              <br /><br />
+              Non-volatile: Data in a data warehouse is not updated or deleted,
+              and historical data is retained.
+              <br /><br />
+              Time-variant: Data in a data warehouse is stored along with a
+              timestamp, allowing users to analyze data as it existed at a
+              specific point in time.
+              <br /><br />
+              Read-optimized: Data in a data warehouse is optimized for
+              read-heavy workloads, allowing for fast query performance.
+              <br /><br />
+              Functionality of a Data Warehouse:
+              <br /><br />
+              Data Integration: Data from various sources is extracted,
+              transformed, and loaded into the data warehouse to provide a
+              unified view of the data.
+              <br /><br />
+              Data Quality: Data in the data warehouse is cleansed,
+              de-duplicated, and validated to ensure accuracy and completeness.
+              <br /><br />
+              Data Modeling: Data in the data warehouse is modeled to support
+              efficient querying and reporting.
+              <br /><br />
+              Data Security: Data in the data warehouse is secured to ensure
+              that only authorized users have access to the data.
+              <br /><br />
+              Reporting and Analysis: Data in the data warehouse is used to
+              generate reports and perform analysis to support business
+              decisions.
+              <br /><br />
+              Data Governance: Data in the data warehouse is managed and
+              governed to ensure data integrity, consistency, and compliance
+              with regulatory requirements.
+              <br /><br />
+              Scalability and Performance: Data warehouse systems are built to
+              handle large volumes of data and support high-performance
+              querying.
+              <br /><br />
+              Data Backup and Recovery: Data warehouse systems have built-in
+              data backup and recovery mechanisms to ensure data availability
+              and protect against data loss.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              1.3. Advantages and Applications of Data Warehouse; Top- Down and
+              Bottom-Up Development Methodology:
+            </summary>
+            <br />
+            <p>
+              Advantages of Data Warehouse:
+              <br /><br />
+              Improved Business Intelligence: Data warehouse enables
+              organizations to gain insights from their data, which can lead to
+              improved decision-making and increased competitiveness.
+              <br /><br />
+              Data Consolidation: Data warehouse allows organizations to
+              consolidate data from multiple sources, providing a single version
+              of the truth.
+              <br /><br />
+              Data Governance: Data warehouse provides a centralized location
+              for data management, enabling organizations to enforce data
+              quality, security, and compliance requirements.
+              <br /><br />
+              Improved Query Performance: Data warehouse is optimized for
+              read-heavy workloads, providing fast query performance and
+              enabling users to run complex queries.
+              <br /><br />
+              Historical Data Analysis: Data warehouse stores historical data,
+              allowing organizations to analyze trends and patterns over time.
+              <br /><br />
+              Applications of Data Warehouse:
+              <br /><br />
+              Business Intelligence and Reporting: Data warehouse enables
+              organizations to generate reports, perform analysis, and gain
+              insights from their data.
+              <br /><br />
+              Data Mining and Predictive Analytics: Data warehouse provides a
+              rich source of data for data mining and predictive analytics.
+              <br /><br />
+              Customer Relationship Management (CRM): Data warehouse can be used
+              to consolidate data from multiple sources to support customer
+              relationship management.
+              <br /><br />
+              Supply Chain Management: Data warehouse can be used to consolidate
+              data from multiple sources to support supply chain management.
+              <br /><br />
+              Healthcare: Data warehouse can be used to consolidate data from
+              multiple sources to support healthcare analytics.
+              <br /><br />
+              Top-Down Development Methodology:<br /><br />
+              Top-down methodology is a development approach where the overall
+              system is divided into smaller, manageable components. The overall
+              system design is created first, and then the design of the
+              individual components is developed. This approach is best suited
+              for projects where the requirements are well understood, and the
+              design can be clearly defined.
+              <br /><br />
+              Bottom-Up Development Methodology:<br /><br />
+              Bottom-up methodology is a development approach where the
+              individual components of the system are developed first, and then
+              integrated to form the overall system. This approach is best
+              suited for projects where the requirements are not well
+              understood, and the design needs to be iteratively developed.
+              <br /><br />
+              In summary, the choice between top-down and bottom-up development
+              methodology depends on the nature of the project, requirements,
+              and the team's comfort level with the approach.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              1.4. Tools for Data warehouse development: Data Warehouse Types
+            </summary>
+            <br />
+            <p>
+              Tools for Data Warehouse Development:
+              <br /><br />
+              Extract, Transform, and Load (ETL) Tools: These tools are used to
+              extract data from various sources, transform the data to match the
+              data warehouse schema, and load the data into the data warehouse.
+              Some examples of ETL tools are Informatica, Talend, and DataStage.
+              <br /><br />
+              Data Modeling Tools: These tools are used to create and maintain
+              the data model for the data warehouse. Some examples of data
+              modeling tools are ERwin, PowerDesigner, and ER/Studio.
+              <br /><br />
+              Data Quality Tools: These tools are used to ensure the quality and
+              completeness of the data in the data warehouse. Some examples of
+              data quality tools are Informatica Data Quality, SAP Data Quality,
+              and Talend Data Quality.
+              <br /><br />
+              Business Intelligence and Reporting Tools: These tools are used to
+              generate reports, perform analysis, and gain insights from the
+              data in the data warehouse. Some examples of BI and reporting
+              tools are Tableau, Cognos, and Business Objects.
+              <br /><br />
+              Data Governance Tools: These tools are used to manage and govern
+              the data in the data warehouse. Some examples of data governance
+              tools are Collibra, Informatica MDM, and SAP Master Data
+              Governance.
+              <br /><br />
+              Data Warehouse Types:
+              <br /><br />
+              Relational Data Warehouse: A relational data warehouse stores data
+              in a relational database, and the data is accessed using SQL.
+              <br /><br />
+              Multidimensional Data Warehouse: A multidimensional data warehouse
+              stores data in a multidimensional cube, and the data is accessed
+              using MDX (Multidimensional Expressions).
+              <br /><br />
+              Hybrid Data Warehouse: A hybrid data warehouse is a combination of
+              relational and multidimensional data warehouse.
+              <br /><br />
+              Cloud Data Warehouse: A cloud data warehouse is a data warehouse
+              that runs on cloud infrastructure. Examples of cloud data
+              warehouse include Amazon Redshift, Google BigQuery, and Azure
+              Synapse Analytics.
+              <br /><br />
+              Big Data Warehouse: A big data warehouse is designed to handle
+              very large volumes of data, typically using distributed computing
+              technologies like Hadoop and NoSQL databases.
+              <br /><br />
+              The choice of data warehouse type will depend on the specific
+              needs of the organization, including the volume and complexity of
+              the data, the types of queries and analysis that will be
+              performed, and the budget and resources available for the project.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              1.5. Planning and Project Management in constructing Data
+              warehouse: Data Warehouse Project;
+            </summary>
+            <br />
+            <p>
+              Planning and Project Management in constructing a Data Warehouse:
+              <br /><br />
+              Define the business requirements: Identify the business goals and
+              objectives for the data warehouse, and gather the necessary
+              requirements from the stakeholders.
+              <br /><br />
+              Develop a project plan: Create a detailed project plan that
+              outlines the tasks, timelines, resources, and budget for the data
+              warehouse project.
+              <br /><br />
+              Identify and select the data sources: Identify all of the data
+              sources that will be used in the data warehouse, and select the
+              appropriate data sources based on the business requirements.
+              <br /><br />
+              Design the data model: Create a logical and physical data model
+              for the data warehouse, taking into account the data sources,
+              business requirements, and performance requirements.
+              <br /><br />
+              Implement the ETL process: Develop and implement the ETL process
+              to extract, transform, and load the data from the various data
+              sources into the data warehouse.
+              <br /><br />
+              Test and validate the data: Test and validate the data in the data
+              warehouse to ensure its accuracy and completeness.
+              <br /><br />
+              Deploy the data warehouse: Deploy the data warehouse to a
+              production environment, and make it available to the end users.
+              <br /><br />
+              Monitor and maintain the data warehouse: Monitor the data
+              warehouse for performance and data quality issues, and make any
+              necessary changes and updates to ensure that the data warehouse
+              continues to meet the business requirements.
+              <br /><br />
+              Data Warehouse Project:
+              <br /><br />
+              A Data Warehouse project is a complex and multi-faceted
+              undertaking that requires a well-defined project plan, a clear
+              understanding of the business requirements, and a skilled team to
+              design, develop, and implement the data warehouse. A successful
+              Data Warehouse project will deliver a robust, scalable, and secure
+              data warehouse that enables the organization to gain valuable
+              insights from its data and make better-informed decisions. The
+              project management methodologies like Agile, Waterfall etc can be
+              used depending on the complexity of the project and the
+              organization's needs.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              1.6. Data Warehouse development Life Cycle, Kimball Lifecycle
+              Diagram
+            </summary>
+            <br />
+            <p>
+              The Data Warehouse Development Life Cycle (DW-DLC) is a process
+              that outlines the steps and tasks required to design, develop, and
+              implement a data warehouse. The Kimball Lifecycle Diagram is a
+              visual representation of the DW-DLC that outlines the key phases
+              of a data warehouse project. <br /><br />
+              The Kimball Lifecycle Diagram consists of the following phases:
+              <br /><br />
+              Business Requirements: Identify and gather the business
+              requirements for the data warehouse.
+              <br /><br />
+              Project Planning: Develop a detailed project plan that outlines
+              the tasks, timelines, resources, and budget for the data warehouse
+              project.
+              <br /><br />
+              Data Analysis: Analyze the data sources and identify the data
+              requirements for the data warehouse.
+              <br /><br />
+              Data Design: Design the logical and physical data model for the
+              data warehouse.
+              <br /><br />
+              ETL Design: Design the ETL process to extract, transform, and load
+              the data from the various data sources into the data warehouse.
+              <br /><br />
+              ETL Development: Develop and implement the ETL process.
+              <br /><br />
+              Data Testing: Test and validate the data in the data warehouse to
+              ensure its accuracy and completeness.
+              <br /><br />
+              Data Deployment: Deploy the data warehouse to a production
+              environment, and make it available to the end users.
+              <br /><br />
+              Data Monitoring and Maintenance: Monitor the data warehouse for
+              performance and data quality issues, and make any necessary
+              changes and updates to ensure that the data warehouse continues to
+              meet the business requirements.
+              <br /><br />
+              The Kimball Lifecycle Diagram is a useful tool for understanding
+              the different phases of a data warehouse project and helps to
+              ensure that all of the necessary steps are taken to design,
+              develop, and implement a successful data warehouse.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+        </details>
+      </div>
+      <div class="unitNo2">
+        <details>
+          <summary>2 2. Data Warehouse Architecture</summary>
+          <details>
+            <summary>2 2. Data Warehouse Architecture</summary>
+            <br />
+            <p>
+              A Data Warehouse Architecture is a logical and physical design of
+              a data warehouse system that defines the structure, components,
+              and relationships of the system. The architecture of a data
+              warehouse is designed to support the efficient storage, retrieval,
+              and management of large amounts of historical data for reporting,
+              analysis, and decision-making. <br /><br />
+              There are three main components of a Data Warehouse Architecture:
+              <br /><br />
+              Data Sources: Data sources are the systems or databases that
+              provide the data that is loaded into the data warehouse. These can
+              include transactional systems, log files, external data feeds, and
+              other sources.
+              <br /><br />
+              Data Integration: Data integration is the process of extracting,
+              transforming, and loading the data from the various data sources
+              into the data warehouse. This process involves the use of Extract,
+              Transform, Load (ETL) tools and technologies to prepare and clean
+              the data for analysis.
+              <br /><br />
+              Data Access and Delivery: Data access and delivery is the process
+              of providing access to the data in the data warehouse for
+              reporting, analysis, and decision-making. This component includes
+              the use of reporting and analysis tools, as well as the delivery
+              of data to end-users through various reporting interfaces such as
+              web portals, dashboards, and mobile devices.
+              <br /><br />
+              There are also several different types of Data Warehouse
+              Architecture, including:
+              <br /><br />
+              Inmon Architecture: Inmon architecture is named after Ralph
+              Kimball who is the founder of the Kimball Group. In this
+              architecture, the data warehouse is built on top of the existing
+              operational systems and is populated with data extracted,
+              transformed, and loaded from these systems.
+              <br /><br />
+              Kimball Architecture: Kimball architecture is named after Ralph
+              Kimball who is the founder of the Kimball Group. In this
+              architecture, the data warehouse is built on top of the existing
+              operational systems and is populated with data extracted,
+              transformed, and loaded from these systems.
+              <br /><br />
+              Hybrid Architecture: A hybrid architecture combines the best
+              features of both the Inmon and Kimball architectures to create a
+              flexible and efficient data warehouse that can be easily adapted
+              to changing business requirements.
+              <br /><br />
+              Data Virtualization: Data virtualization is a modern approach to
+              data warehousing that uses virtual views to access and integrate
+              data from a variety of sources, without the need for ETL
+              processes.
+              <br /><br />
+              Each architecture has its own advantages and disadvantages, and
+              the choice of architecture will depend on the specific
+              requirements of the organization and the data warehouse project.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              2.1. Introductions, Components of Data warehouse Architecture
+            </summary>
+            <br />
+            <p>
+              An Introduction to Data Warehousing: <br /><br />
+              A Data Warehouse (DW) is a central repository of data that is
+              specifically designed to support business intelligence (BI)
+              activities and decision-making. Data warehouses are designed to
+              integrate data from multiple and diverse sources, and to provide a
+              unified and consistent view of the data for reporting, analysis,
+              and decision-making.
+              <br /><br />
+              The main components of a Data Warehouse Architecture:
+              <br /><br />
+              Data Sources: Data sources are the systems or databases that
+              provide the data that is loaded into the data warehouse. These can
+              include transactional systems, log files, external data feeds, and
+              other sources.
+              <br /><br />
+              Data Integration: Data integration is the process of extracting,
+              transforming, and loading the data from the various data sources
+              into the data warehouse. This process involves the use of Extract,
+              Transform, Load (ETL) tools and technologies to prepare and clean
+              the data for analysis.
+              <br /><br />
+              Data Access and Delivery: Data access and delivery is the process
+              of providing access to the data in the data warehouse for
+              reporting, analysis, and decision-making. This component includes
+              the use of reporting and analysis tools, as well as the delivery
+              of data to end-users through various reporting interfaces such as
+              web portals, dashboards, and mobile devices.
+              <br /><br />
+              Data Storage: Data storage component is responsible for storing
+              large amount of data in the data warehouse. Data storage can be
+              done in relational database, NoSQL database or even cloud storage
+              solutions.
+              <br /><br />
+              Data Modeling: Data modeling component is responsible for creating
+              the logical and physical data model of the data warehouse. This
+              includes creating entities, relationships, and attributes that
+              represent the data in the data warehouse.
+              <br /><br />
+              Metadata Management: Metadata management component is responsible
+              for managing the information about the data in the data warehouse,
+              such as data lineage, data quality, and data dictionary. This
+              information is useful for understanding the data and
+              troubleshooting any issues that arise.
+              <br /><br />
+              Data Security: Data security component is responsible for
+              providing secure access to the data in the data warehouse. This
+              includes implementing user authentication, access controls, and
+              data encryption to protect the data from unauthorized access or
+              tampering.
+              <br /><br />
+              These components work together to ensure that the data in the data
+              warehouse is accurate, consistent, and reliable, and that it can
+              be easily accessed and analyzed by business users.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              2.2. Technical Architectures; Federated Data Warehouse
+              Architecture: Tool selection;
+            </summary>
+            <br />
+            <p>
+              Technical Architectures: <br /><br />
+              There are several technical architectures that can be used to
+              design and implement a data warehouse. These include:
+              <br /><br />
+              Shared-Nothing Architecture: This architecture distributes the
+              data and processing across multiple servers, with each server
+              having its own storage and processing capabilities. This
+              architecture provides high scalability and performance, but can be
+              more complex to manage and maintain.
+              <br /><br />
+              Shared-Disk Architecture: This architecture uses a shared disk to
+              store the data, with multiple servers accessing the data and
+              performing processing. This architecture is simpler to manage and
+              maintain, but can have limitations on scalability and performance.
+              <br /><br />
+              Shared-Nothing-Parallel-Processing Architecture: This architecture
+              combines the shared-nothing and shared-disk architectures by using
+              a shared disk to store the data and multiple servers to process
+              the data in parallel. This architecture provides high scalability
+              and performance, and is relatively easy to manage and maintain.
+              <br /><br />
+              Federated Data Warehouse Architecture:
+              <br /><br />
+              A Federated Data Warehouse Architecture is a way of integrating
+              data from multiple data warehouses into a single, unified view.
+              This is done by creating a virtual data warehouse that is composed
+              of data from multiple physical data warehouses. This architecture
+              allows for the integration of data from different sources and
+              systems, and can provide a more comprehensive view of the data for
+              reporting and analysis.
+              <br /><br />
+              Tool Selection:
+              <br /><br />
+              Selecting the right tools for a data warehouse development project
+              is important for ensuring that the data warehouse is built
+              efficiently and effectively. Some of the key tools that are
+              commonly used in data warehouse development include:
+              <br /><br />
+              ETL Tools: ETL tools are used to extract, transform, and load data
+              from various data sources into the data warehouse. Examples
+              include Informatica, Talend, and DataStage.
+              <br /><br />
+              Data Modeling Tools: Data modeling tools are used to create the
+              logical and physical data models of the data warehouse. Examples
+              include Erwin, PowerDesigner, and CA ERwin.
+              <br /><br />
+              Reporting and Analysis Tools: Reporting and analysis tools are
+              used to access and analyze the data in the data warehouse.
+              Examples include Business Objects, Cognos, and Tableau.
+              <br /><br />
+              Data Governance Tools: Data governance tools are used to manage
+              the data in the data warehouse, including data lineage, data
+              quality, and data dictionary. Examples include Collibra,
+              Informatica MDM, and SAP MDG.
+              <br /><br />
+              Data Visualization Tools: Data visualization tools are used to
+              create interactive and visually appealing dashboards and reports
+              for business users. Examples include Tableau, Power BI and Looker.
+              <br /><br />
+              It's important to evaluate different tools and their features to
+              find the best fit for the organization's needs, budget and
+              expertise.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              2.3. Dimensional Modeling: E-R Modeling VS Dimensional Modeling
+            </summary>
+            <br />
+            <p>
+              Dimensional modeling is a technique used to design and organize
+              data in a data warehouse. It is based on the idea of organizing
+              data into facts and dimensions, with facts being the numeric
+              measurements of the business and dimensions being the
+              characteristics of the data. <br /><br />
+              E-R (Entity-Relationship) modeling is a technique used to design
+              and organize data in a transactional system, such as an OLTP
+              system. It is based on the idea of organizing data into entities
+              and relationships, with entities being the objects or concepts in
+              the system and relationships being the connections between those
+              entities.
+              <br /><br />
+              The main difference between E-R modeling and Dimensional modeling
+              is the way they organize data. E-R modeling organizes data into
+              entities and relationships, while Dimensional modeling organizes
+              data into facts and dimensions.
+              <br /><br />
+              E-R modeling is more suitable for transactional systems, where the
+              data is normalized and the relationships between entities are well
+              defined. Dimensional modeling is more suitable for data warehouse
+              and BI systems, where the data is denormalized and the focus is on
+              the analysis of the data.
+              <br /><br />
+              While E-R modeling is more suitable for transactional systems,
+              Dimensional modeling is more appropriate for data warehouse and BI
+              systems. Dimensional modeling is more intuitive for business users
+              as it models data in a way that is easy to understand and
+              navigate, and is optimized for reporting and analysis.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              2.4. Data Warehouse Schemas; Star Schema, Inside Dimensional
+              Table, Inside Fact Table, Fact Less Fact Table, Granularity, Star
+              Schema Keys: Snowflake Schema, Fact Constellation Schema
+            </summary>
+            <br />
+            <p>
+              A Data Warehouse schema is a way of organizing the data in a data
+              warehouse. There are several types of schemas, each with its own
+              strengths and weaknesses. <br /><br />
+              Star schema is the simplest and most common schema used in data
+              warehousing. It consists of a central fact table that contains the
+              numeric measurements of the business and one or more dimension
+              tables that contain the characteristics of the data. The fact
+              table and dimension tables are connected by foreign keys.
+              <br /><br />
+              An Inside Dimensional Table is a dimension table that is connected
+              to another dimension table, it is considered a sub dimension to
+              the main dimension table.
+              <br /><br />
+              An Inside Fact Table is a fact table that is connected to another
+              fact table, it is considered a sub fact to the main fact table.
+              <br /><br />
+              A Fact Less Fact Table is a fact table that does not contain any
+              measure, it is used to keep track of events or activities that
+              happen in a certain period of time.
+              <br /><br />
+              Granularity is the level of detail at which data is stored in a
+              fact table. It can be at the lowest level of detail, such as
+              individual transactions, or at a higher level of detail, such as
+              monthly totals.
+              <br /><br />
+              Star Schema keys are the foreign keys used to connect the fact
+              table to the dimension tables. They are used to join the data from
+              the fact table and the dimension tables to retrieve the required
+              data.
+              <br /><br />
+              Snowflake schema is similar to star schema but with normalized
+              dimension tables. In this schema, the dimension tables are
+              connected by foreign keys and it can improve the query performance
+              and reduce the data redundancy.
+              <br /><br />
+              Fact constellation schema is a combination of star schema and
+              snowflake schema, it has multiple fact tables and multiple
+              dimension tables with the ability to connect them in different
+              ways depending on the analysis need.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              2.5. Introduction to Metadata : Categorizing Metadata:
+            </summary>
+            <br />
+            <p>
+              Metadata is data that describes other data. It is used to provide
+              information about the data stored in a data warehouse, including
+              its structure, content, and usage. <br /><br />
+              There are several types of metadata that can be used to categorize
+              and describe data in a data warehouse. Some examples include:
+              <br /><br />
+              Technical metadata: This type of metadata describes the technical
+              characteristics of the data, such as data types, field lengths,
+              and indexes.
+              <br /><br />
+              Business metadata: This type of metadata describes the business
+              context of the data, such as business definitions, business rules,
+              and business processes.
+              <br /><br />
+              Operational metadata: This type of metadata describes the
+              operational aspects of the data, such as data lineage, data
+              quality, and data governance.
+              <br /><br />
+              Data dictionary: This type of metadata provides definitions and
+              explanations of the data elements and tables used in the data
+              warehouse.
+              <br /><br />
+              Data lineage: This type of metadata describes the origin, history
+              and transformation of the data, it helps to trace the data from
+              the source to the target and understand the impact of changes on
+              the data.
+              <br /><br />
+              Data Governance metadata: This type of metadata describes the
+              roles and responsibilities of data stewards, data owners, data
+              custodians, and data consumers. It also includes details about
+              data security, data privacy, and data compliance.
+              <br /><br />
+              Overall, metadata is crucial for understanding, managing, and
+              using the data in a data warehouse effectively. It helps to ensure
+              data quality, improve data governance, and provide transparency
+              and traceability for the data lineage.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              2.6. Metadata management in practice; Meta data requirements
+              gathering, Metadata classification, Meta data collection
+              strategies, Tools for Metadata Management
+            </summary>
+            <br />
+            <p>
+              Metadata management in practice involves several key steps to
+              ensure that the metadata is accurate, complete, and up-to-date.
+              These steps include: <br /><br />
+              Metadata requirements gathering: This step involves identifying
+              the specific metadata requirements for the data warehouse by
+              working with business stakeholders, data architects, and other
+              relevant parties. This may include determining the types of
+              metadata that are needed, the level of detail required, and the
+              specific data elements that need to be described.
+              <br /><br />
+              Metadata classification: This step involves organizing the
+              metadata into categories and subcategories to make it easier to
+              manage and understand. This may include creating a metadata
+              taxonomy or a data dictionary to provide a common structure for
+              the metadata.
+              <br /><br />
+              Metadata collection strategies: This step involves determining the
+              best way to collect metadata from various sources, such as data
+              dictionaries, data models, data lineage tools, and data profiling
+              tools. It also includes the process of mapping the metadata from
+              the source systems to the data warehouse.
+              <br /><br />
+              Tools for Metadata Management: There are several tools available
+              to help manage metadata. Some popular ones include:
+              <br /><br />
+              IBM's Infosphere Metadata Workbench <br />
+              Informatica's Metadata Manager<br />
+              SAP's Data Services<br />
+              Talend Metadata Manager<br />
+              Informatica's PowerCenter MDM<br /><br />
+              These tools provide functionalities such as metadata discovery,
+              data lineage tracking, data profiling, data governance, and data
+              dictionary management.
+              <br /><br />
+              Overall, effective metadata management is essential for ensuring
+              the quality, accuracy, and completeness of the data in a data
+              warehouse. By gathering, classifying, and managing metadata in a
+              consistent and organized manner, organizations can improve their
+              ability to understand, use, and govern the data in the data
+              warehouse.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+        </details>
+      </div>
+      <div class="unitNo3">
+        <details>
+          <summary>3 3. Data Preprocessing and ETL</summary>
+          <details>
+            <summary>3 3. Data Preprocessing and ETL</summary>
+            <br />
+            <p>
+              Data preprocessing and ETL (Extract, Transform, Load) are critical
+              steps in the data warehouse development process. They involve
+              extracting data from various sources, cleaning, transforming and
+              loading it into the data warehouse. <br /><br />
+              Data Extraction: Data is extracted from various sources such as
+              transactional systems, flat files, XML, and other databases. The
+              extracted data is then transformed and loaded into the data
+              warehouse.
+              <br /><br />
+              Data Cleaning: Data cleaning involves identifying and removing
+              inconsistencies, errors, and duplicate data from the extracted
+              data. This step ensures that the data is accurate, consistent, and
+              ready for loading into the data warehouse.
+              <br /><br />
+              Data Transformation: Data transformation involves converting the
+              extracted and cleaned data into the format required by the data
+              warehouse. This may include mapping data elements, converting data
+              types, and applying calculations and aggregations.
+              <br /><br />
+              Data Loading: Data is loaded into the data warehouse in a format
+              that is optimized for reporting and analysis. This may include
+              creating indexes, partitioning data, and creating summary tables.
+              <br /><br />
+              ETL Tools: There are several ETL tools available that automate the
+              process of data extraction, transformation, and loading. Some
+              popular ETL tools include:
+              <br /><br />
+              Informatica PowerCenter <br />
+              IBM DataStage<br />
+              SAP Data Services<br />
+              Talend<br />
+              Microsoft SQL Server Integration Services (SSIS)<br /><br />
+              Overall, data preprocessing and ETL are important steps in the
+              data warehouse development process. They ensure that the data is
+              accurate, consistent, and ready for reporting and analysis. By
+              using ETL tools, organizations can automate the process and
+              improve the quality, accuracy, and completeness of the data in the
+              data warehouse.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>3.1. Data Pre-processing: Data Cleaning tasks</summary>
+            <br />
+            <p>
+              Data cleaning is an essential step in the data pre-processing
+              phase of data warehousing. It involves identifying and removing
+              inconsistencies, errors, and duplicate data from the extracted
+              data, so that the data is accurate, consistent, and ready for
+              loading into the data warehouse. The following are some common
+              data cleaning tasks that are typically performed: <br /><br />
+              Missing data: Identifying and handling missing data, either by
+              removing or imputing the missing values.
+              <br /><br />
+              Duplicate data: Identifying and removing duplicate records from
+              the data set.
+              <br /><br />
+              Data standardization: Converting data into a consistent format,
+              such as converting all dates to a common format, or converting all
+              text to uppercase or lowercase.
+              <br /><br />
+              Data validation: Checking data for errors, such as invalid values,
+              out-of-range values, or data that violates business rules.
+              <br /><br />
+              Data transformation: Transforming data into a format that is more
+              appropriate for the data warehouse, such as converting data types,
+              applying calculations and aggregations, or mapping data elements.
+              <br /><br />
+              Data integration: Combining data from multiple sources and
+              resolving conflicts between the data.
+              <br /><br />
+              Data reduction: Reducing the data set size by removing unnecessary
+              columns, rows, or records.
+              <br /><br />
+              Data quality control: Performing statistical analysis and data
+              profiling to identify and correct errors and inconsistencies.
+              <br /><br />
+              Overall, data cleaning tasks are essential to ensure that the data
+              in the data warehouse is accurate, consistent, and of high
+              quality. These tasks are usually performed using ETL tools and
+              data quality software.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>3.2. Data Integration and Data Reduction</summary>
+            <br />
+            <p>
+              Data integration is the process of combining data from multiple
+              sources into a unified view. This is an important step in data
+              warehousing as it allows for a consistent, holistic view of the
+              data that is useful for reporting, analysis and decision making.
+              Some common data integration techniques include: <br /><br />
+              Extract, Transform and Load (ETL): Extracting data from various
+              sources, transforming it to fit the data warehouse schema, and
+              loading it into the data warehouse.
+              <br /><br />
+              Data federation: Retrieving data from multiple sources and
+              combining it into a single view without actually copying the data.
+              <br /><br />
+              Data warehousing bus: A centralized architecture that combines
+              data from multiple sources and distributes it to the data
+              warehouse and other systems.
+              <br /><br />
+              Data reduction is the process of reducing the data set size by
+              removing unnecessary columns, rows, or records. This is important
+              in data warehousing because it can reduce the storage and
+              processing requirements of the data warehouse, while still
+              providing the same level of reporting and analysis functionality.
+              Some common data reduction techniques include:
+              <br /><br />
+              Data sampling: Selecting a subset of the data for analysis and
+              reporting.
+              <br /><br />
+              Data aggregation: Combining multiple records into a single record
+              based on certain criteria.
+              <br /><br />
+              Data compression: Reducing the storage space required for the data
+              by removing redundancy and unnecessary information.
+              <br /><br />
+              Data archiving: Storing historical data in an archive and removing
+              it from the active data warehouse.
+              <br /><br />
+              Overall, data integration and data reduction are important steps
+              in data warehousing as they allow for a consistent view of the
+              data and can reduce the storage and processing requirements of the
+              data warehouse. These steps are usually performed using ETL tools
+              and data quality software.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              3.3. Discretization and Concept Hierarchy Generation
+            </summary>
+            <br />
+            <p>
+              Discretization is the process of converting continuous data into a
+              finite set of discrete values. This is often done in data
+              warehousing to reduce the data set size, simplify data analysis
+              and make it more manageable. Discretization can be performed using
+              a variety of techniques, such as: <br /><br />
+              Binning: Dividing the data into a fixed number of intervals or
+              bins.
+              <br /><br />
+              Clustering: Grouping similar data points together based on certain
+              characteristics.
+              <br /><br />
+              Decision trees: Using a decision tree algorithm to divide the data
+              into multiple branches based on certain conditions.
+              <br /><br />
+              Concept hierarchy generation is the process of creating a
+              hierarchical structure of concepts to organize and simplify data
+              analysis. This is often used in data warehousing to organize data
+              into a logical structure that can be easily navigated and
+              understood. Concept hierarchy generation can be performed using a
+              variety of techniques, such as:
+              <br /><br />
+              Top-down: Starting with a high-level concept and breaking it down
+              into more specific concepts.
+              <br /><br />
+              Bottom-up: Starting with specific concepts and grouping them into
+              more general concepts.
+              <br /><br />
+              Automatic: Using algorithms to generate the hierarchy based on
+              certain characteristics of the data.
+              <br /><br />
+              Both Discretization and Concept Hierarchy Generation are important
+              steps in data warehousing as they allow for simplifying and making
+              the data more manageable and meaningful for analysis. These steps
+              are usually performed using data mining and machine learning
+              techniques.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              3.4. Data Transformation; Basic Tasks in Transformation, Major
+              Data Transformation Types
+            </summary>
+            <br />
+            <p>
+              Data transformation is the process of converting data from one
+              format or structure to another. The goal of data transformation is
+              to make the data more usable and meaningful for analysis. Basic
+              tasks in data transformation include: <br /><br />
+              Data mapping: Assigning the source data fields to the target data
+              fields.
+              <br /><br />
+              Data cleansing: Removing or correcting any errors or
+              inconsistencies in the data.
+              <br /><br />
+              Data validation: Checking the data for completeness and accuracy.
+              <br /><br />
+              Data consolidation: Combining data from multiple sources into a
+              single data set.
+              <br /><br />
+              Data standardization: Converting data to a common format or
+              structure.
+              <br /><br />
+              Major data transformation types include:
+              <br /><br />
+              Structural Transformation: Changing the structure of the data,
+              such as splitting columns or merging tables.
+              <br /><br />
+              Semantic Transformation: Changing the meaning of the data, such as
+              converting measurement units or renaming fields.
+              <br /><br />
+              Data Type Transformation: Converting data from one data type to
+              another, such as converting a string to a date.
+              <br /><br />
+              Data Value Transformation: Changing the data values in a specific
+              way, such as replacing null values.
+              <br /><br />
+              Data Consolidation Transformation: Combining data from multiple
+              sources into a single data set.
+              <br /><br />
+              These types of transformations are typically performed using ETL
+              (extract, transform, load) tools, which are specifically designed
+              for data warehousing and integration tasks. These tools allow for
+              the automation of data transformation processes and enable data to
+              be transformed and loaded into the data warehouse quickly and
+              efficiently.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              3.5. Introduction to ETL(Extract, Transform and Load)
+            </summary>
+            <br />
+            <p>
+              ETL (Extract, Transform, and Load) is a process used to extract
+              data from one or more sources, transform it to meet the
+              requirements of the target system, and then load it into the
+              target system. The goal of ETL is to make the data in the target
+              system accurate, consistent, and usable for analysis and
+              reporting. <br /><br />
+              Extract: The first step in ETL is to extract data from various
+              sources. This can include databases, flat files, web services, and
+              more. The data is extracted in its raw format and is not yet ready
+              for use in the target system.
+              <br /><br />
+              Transform: After the data has been extracted, it is then
+              transformed to meet the requirements of the target system. This
+              includes cleaning, consolidating, and standardizing the data. This
+              step also includes mapping the data from the source to the target
+              system, and performing any necessary calculations or data type
+              conversions.
+              <br /><br />
+              Load: After the data has been transformed, it is then loaded into
+              the target system. This can include loading data into a data
+              warehouse, data mart, or operational database. Data is typically
+              loaded into the target system in batches, rather than in
+              real-time, to ensure data integrity and consistency.
+              <br /><br />
+              ETL processes are typically performed using specialized software
+              tools that automate the extraction, transformation, and loading of
+              data. These tools provide a wide range of capabilities, such as
+              data profiling, data cleansing, data mapping, and more, that make
+              ETL processes more efficient and less prone to errors.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              3.6. ETL requirements and steps: Data Extraction; Extraction
+              Methods, Logical Extraction Methods, Physical Extraction Methods
+            </summary>
+            <br />
+            <p>
+              ETL requirements and steps: <br /><br />
+              Data Extraction: The first step in ETL is to extract data from
+              various sources. This includes identifying the sources of data,
+              determining the format and structure of the data, and extracting
+              the data in its raw format.
+              <br /><br />
+              Extraction Methods: There are two main types of extraction
+              methods: logical and physical.
+              <br /><br />
+              Logical Extraction Methods: Logical extraction methods include
+              using SQL queries to extract data from a database or using APIs to
+              extract data from web services. These methods extract data in a
+              format that is understandable by the ETL tool.
+              <br /><br />
+              Physical Extraction Methods: Physical extraction methods include
+              reading data from flat files or using specialized data extraction
+              software. These methods extract data in its raw format and may
+              require additional processing before it can be used by the ETL
+              tool.
+              <br /><br />
+              Data Transformation: After the data has been extracted, it is
+              transformed to meet the requirements of the target system. This
+              includes cleaning, consolidating, and standardizing the data. This
+              step also includes mapping the data from the source to the target
+              system, and performing any necessary calculations or data type
+              conversions.
+              <br /><br />
+              Data Loading: After the data has been transformed, it is then
+              loaded into the target system. This can include loading data into
+              a data warehouse, data mart, or operational database. Data is
+              typically loaded into the target system in batches, rather than in
+              real-time, to ensure data integrity and consistency.
+              <br /><br />
+              ETL Validation: After the data has been loaded into the target
+              system, it is important to validate the data to ensure that it is
+              accurate and complete. This can include comparing the data to the
+              source system, running validation checks, and performing data
+              quality assessments.
+              <br /><br />
+              ETL Performance: The ETL process should be monitored for
+              performance and any issues should be identified and resolved
+              quickly. This includes monitoring the ETL load times, monitoring
+              the ETL job run time and identifying any errors or data
+              inconsistencies.
+              <br /><br />
+              ETL Maintenance: Regularly maintaining the ETL process by updating
+              the ETL mappings, adding new mappings and troubleshoot issues.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              3.7. Data loading; Data Loading Techniques, ETL Tools
+            </summary>
+            <br />
+            <p>
+              Data loading is the process of moving data from the source
+              system(s) to the data warehouse. The data is usually extracted
+              from the source system(s) and then transformed to fit the data
+              warehouse's schema and structure before being loaded into the
+              target system. <br /><br />
+              There are several data loading techniques available:
+              <br /><br />
+              Full Load: This is the process of loading all the data into the
+              data warehouse from the source system.<br /><br />
+              Incremental Load: This is the process of loading only the new or
+              changed data into the data warehouse. This technique is used to
+              keep the data warehouse up to date with the source system.<br /><br />
+              Batch Load: This is the process of loading data into the data
+              warehouse in batches. This technique is used to improve
+              performance and manage resources.<br /><br />
+              ETL tools are software applications that automate the data
+              extraction, transformation, and loading process. Some examples of
+              ETL tools include Informatica, DataStage, Talend, and SSIS. These
+              tools provide a user-friendly interface for defining, scheduling,
+              and executing ETL processes, as well as managing and monitoring
+              the data flow.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+        </details>
+      </div>
+      <div class="unitNo4">
+        <details>
+          <summary>4 4. Data Warehouse & OLAP:</summary>
+          <details>
+            <summary>4 4. Data Warehouse & OLAP:</summary>
+            <br />
+            <p>
+              Data warehousing and OLAP (Online Analytical Processing) are
+              closely related concepts. A data warehouse is a collection of data
+              from different sources that is used to support decision-making and
+              business intelligence activities. OLAP is a technology that
+              enables users to analyze data from multiple dimensions and
+              hierarchies, using advanced calculations and aggregate functions.
+              <br /><br />
+              A data warehouse typically contains a large amount of historical
+              data, which is organized and indexed to support efficient querying
+              and analysis. The data is usually stored in a multi-dimensional
+              schema, such as a star or snowflake schema, which allows for easy
+              navigation and aggregation of data.
+              <br /><br />
+              OLAP is typically used to access and analyze the data in a data
+              warehouse. OLAP systems provide advanced features such as
+              multidimensional querying, data slicing and dicing, and
+              hierarchical navigation. These features enable users to quickly
+              and easily explore and analyze data from different perspectives,
+              identify trends and patterns, and make informed business
+              decisions.
+              <br /><br />
+              One of the most common tools used for OLAP is the OLAP cube. An
+              OLAP cube is a multi-dimensional data structure that is optimized
+              for fast querying and analysis. It is made up of facts and
+              dimensions, which represent the data in a data warehouse. These
+              facts and dimensions are organized into hierarchies, which allow
+              for easy navigation and aggregation of data.
+              <br /><br />
+              In summary, a data warehouse is a large collection of data that is
+              used to support decision-making and business intelligence
+              activities, while OLAP is a technology that enables users to
+              analyze data from multiple dimensions and hierarchies using
+              advanced calculations and aggregate functions.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              4.1. Introduction: What is OLAP?; Characteristics of OLAP,
+            </summary>
+            <br />
+            <p>
+              OLAP (Online Analytical Processing) is a technology that enables
+              users to analyze data from multiple dimensions and hierarchies,
+              using advanced calculations and aggregate functions. The primary
+              goal of OLAP is to provide a flexible and interactive way for
+              users to explore and analyze data, in order to make informed
+              business decisions. <br /><br />
+              Here are some of the characteristics of OLAP:
+              <br /><br />
+              Multidimensional data model: OLAP uses a multidimensional data
+              model, which organizes data into facts and dimensions. This allows
+              for easy navigation and aggregation of data from multiple
+              perspectives.
+              <br /><br />
+              Advanced querying and calculation capabilities: OLAP systems
+              provide advanced features such as multidimensional querying, data
+              slicing and dicing, and hierarchical navigation. These features
+              enable users to quickly and easily explore and analyze data.
+              <br /><br />
+              High performance: OLAP systems are optimized for fast querying and
+              analysis, even with large amounts of data.
+              <br /><br />
+              Support for advanced analytics: OLAP systems support advanced
+              analytics such as data mining, trend analysis, and forecasting.
+              <br /><br />
+              User-friendly interface: OLAP systems typically provide a
+              user-friendly interface, such as a web-based or desktop
+              application, which makes it easy for users to access and analyze
+              data.
+              <br /><br />
+              Support for real-time data: OLAP systems can support real-time
+              data, allowing users to access and analyze the most up-to-date
+              information.
+              <br /><br />
+              In summary, OLAP is a technology that enables users to analyze
+              data from multiple dimensions and hierarchies, using advanced
+              calculations and aggregate functions, in order to make informed
+              business decisions. It is a high performance, user-friendly,
+              advanced analytics technology with a multidimensional data model,
+              that can support real-time data.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              4.2. Steps in the OLAP Creation Process, OLAP operations,
+              Advantages of OLAP: Multidimensional Data:
+            </summary>
+            <br />
+            <p>
+              The steps in the OLAP creation process include: <br /><br />
+              Data modeling and design, which involves identifying the
+              dimensions and hierarchies, and determining the level of
+              granularity of the data.<br /><br />
+              Data extraction, transformation and loading, which involves
+              extracting data from the source systems, transforming it to
+              conform to the data model, and loading it into the OLAP system.<br /><br />
+              Cube building, which involves creating the multidimensional
+              structures that will be used to store the data.<br /><br />
+              Cube population, which involves populating the cube with the
+              data.<br /><br />
+              OLAP operations include:
+              <br /><br />
+              Drill-down: navigating to a lower level of detail in a dimension
+              hierarchy<br /><br />
+              Roll-up: navigating to a higher level of detail in a dimension
+              hierarchy<br /><br />
+              Slice-and-dice: selecting a subset of the data to view based on a
+              specific dimension or dimension value<br /><br />
+              Pivot: rotating the data view to change the way the data is
+              displayed Drill-through: drilling down to the detail data behind a
+              specific cell in the cube<br /><br />
+              Advantages of OLAP include:
+              <br /><br />
+              Improved querying and reporting performance, as the data is
+              pre-aggregated and stored in a multidimensional format<br /><br />
+              Improved data analysis and decision-making, as users can easily
+              navigate and slice-and-dice the data to uncover insights<br /><br />
+              Improved data integration, as data from multiple sources can be
+              consolidated and made available for analysis through the OLAP
+              cube<br /><br />
+              Improved data security, as data access can be controlled at the
+              dimension and level granularity level.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>4.3. OLAP Architectures; MOLAP, ROLAP, HOLAP:</summary>
+            <br />
+            <p>
+              OLAP (Online Analytical Processing) is a technology used to
+              analyze and present multidimensional data in a format that is easy
+              for users to understand and use. The creation process of OLAP
+              involves creating a multidimensional data model, also known as a
+              cube, which organizes data into dimensions and hierarchies.
+              <br /><br />
+              OLAP operations include slicing, dicing, drilling, and roll-up.
+              These operations allow users to explore and analyze the data in
+              different ways, such as viewing data for specific time periods,
+              products, or regions.
+              <br /><br />
+              Advantages of OLAP include faster data analysis, the ability to
+              view data from multiple perspectives, and the ability to analyze
+              large amounts of data.
+              <br /><br />
+              There are three main types of OLAP architectures: MOLAP
+              (Multidimensional OLAP), ROLAP (Relational OLAP), and HOLAP
+              (Hybrid OLAP). MOLAP stores data in a pre-calculated
+              multidimensional format, ROLAP stores data in a relational
+              database and performs calculations on-the-fly, and HOLAP combines
+              the strengths of both MOLAP and ROLAP.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              4.4. Data Warehouse and OLAP: Hypercube & Multicubes
+            </summary>
+            <br />
+            <p>
+              In a data warehouse, an OLAP (Online Analytical Processing) system
+              is used to analyze large amounts of historical data. The main
+              characteristic of an OLAP system is its ability to provide fast
+              querying and complex analysis of multidimensional data.
+              <br /><br />
+              The steps in the OLAP creation process are:
+              <br /><br />
+              Data modeling: Defining the data structure and relationships.<br /><br />
+              Data extraction, transformation, and loading (ETL): Preparing the
+              data for analysis.<br /><br />
+              Cube creation: Creating a multidimensional structure called a cube
+              that organizes the data into dimensions and hierarchies.<br /><br />
+              Data analysis: Querying the data using tools such as drill-down,
+              roll-up, and pivot.<br /><br />
+              OLAP operations include:
+              <br /><br />
+              Drill-down: Navigating to a lower level of detail in a dimension
+              hierarchy.<br /><br />
+              Roll-up: Navigating to a higher level of detail in a dimension
+              hierarchy.<br /><br />
+              Pivot: Rotating the data to view it from a different
+              perspective.<br /><br />
+              Advantages of OLAP include:
+              <br /><br />
+              Fast querying and analysis of large amounts of data.<br /><br />
+              The ability to view data from different perspectives and at
+              different levels of detail.<br /><br />
+              Support for complex calculations and aggregations.<br /><br />
+              There are three main types of OLAP architectures: MOLAP
+              (Multidimensional OLAP), ROLAP (Relational OLAP), and HOLAP
+              (Hybrid OLAP).<br /><br />
+
+              A hypercube, also known as a multidimensional array or a data
+              cube, is a fundamental concept in OLAP. It is a multi-dimensional
+              extension of a two-dimensional table. A hypercube can be thought
+              of as a collection of data points, where each point is identified
+              by a set of coordinates in the multi-dimensional space.
+              <br /><br />
+              A multicube is a collection of multiple cubes, each with its own
+              dimensions and hierarchies, but sharing a common set of facts. It
+              allows for more complex data analysis and querying by providing
+              multiple perspectives on the same data.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+        </details>
+      </div>
+      <div class="unitNo5">
+        <details>
+          <summary>5 5. Introduction to Data Mining:</summary>
+          <details>
+            <summary>5 5. Introduction to Data Mining:</summary>
+            <br />
+            <p>
+              Data mining is the process of discovering patterns and knowledge
+              from large sets of data. It is a multidisciplinary field that
+              combines techniques from statistics, machine learning, database
+              systems, and visualization to extract actionable insights from
+              data. Data mining can be applied to a wide range of applications
+              such as customer relationship management, fraud detection, market
+              basket analysis, and bioinformatics. It involves various steps
+              such as data preparation, feature selection, model building,
+              evaluation, and deployment. The goal of data mining is to extract
+              useful and previously unknown information from data and use it to
+              make better decisions.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>5.1. Introduction and Scope of Data Mining</summary>
+            <br />
+            <p>
+              Data mining is a process of discovering patterns and knowledge
+              from large sets of data. It is a multidisciplinary field that
+              combines techniques from statistics, machine learning, database
+              systems, and visualization to extract actionable insights from
+              data. Data mining can be applied to a wide range of applications
+              such as customer relationship management, fraud detection, market
+              basket analysis, bioinformatics, and many more. <br /><br />
+              The scope of data mining includes several tasks such as:
+              <br /><br />
+              Predictive modeling: This task involves building models to predict
+              future events or outcomes based on historical data.
+              <br /><br />
+              Clustering: This task involves grouping similar data points
+              together based on their characteristics.
+              <br /><br />
+              Association rule mining: This task involves finding the
+              relationships between different variables in the data.
+              <br /><br />
+              Anomaly detection: This task involves identifying unusual or
+              unexpected data points.
+              <br /><br />
+              Sequence mining: This task involves finding patterns in sequential
+              data such as time series or transaction data.
+              <br /><br />
+              Visualization: This task involves creating graphical
+              representations of the data to help with understanding and
+              communication of the results.
+              <br /><br />
+              Data mining is a rapidly growing field with new techniques and
+              technologies constantly emerging, making it an exciting and
+              challenging area to work in.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              5.2. How does Data Mining Works, Predictive Modeling
+            </summary>
+            <br />
+            <p>
+              Data mining is the process of discovering patterns and knowledge
+              from large data sets. It involves using various techniques such as
+              machine learning, statistical analysis, and database management to
+              extract insights and knowledge from data. Predictive modeling is a
+              technique used in data mining to create a model that can predict
+              future outcomes based on historical data. The model is trained on
+              a dataset and then used to make predictions on new, unseen data.
+              Predictive modeling can be used for a variety of applications,
+              such as fraud detection, customer segmentation, and predictive
+              maintenance.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>5.3. Data Mining and Data Warehousing</summary>
+            <br />
+            <p>
+              Data mining and data warehousing are closely related in that they
+              both involve working with large amounts of data. Data warehousing
+              provides a centralized repository of data that can be used as a
+              source for data mining. The data stored in a data warehouse is
+              typically cleaned, integrated, and transformed, making it easier
+              to work with for data mining tasks. Data mining techniques can
+              then be applied to the data in the warehouse to discover patterns
+              and insights that would otherwise be difficult or impossible to
+              uncover. Data mining can also be used to improve the quality of
+              the data in the warehouse by identifying and removing errors and
+              inconsistencies. In this way, data warehousing and data mining
+              complement each other and are often used together in business
+              intelligence and analytics applications.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>5.4. Architecture for Data Mining</summary>
+            <br />
+            <p>
+              Data mining architecture refers to the overall structure and
+              organization of the data mining process. It typically includes the
+              following components: <br /><br />
+              Data Source: The data source is the location where the raw data is
+              stored, such as a data warehouse or a relational database.
+              <br /><br />
+              Data Integration: The data integration component is responsible
+              for extracting, transforming, and loading the data from the data
+              source into a format suitable for data mining.
+              <br /><br />
+              Data Warehouse: The data warehouse is a central repository where
+              the data is stored and organized for efficient access and
+              retrieval.
+              <br /><br />
+              Data Mining Engine: The data mining engine is the core component
+              of the architecture that performs the actual data mining tasks,
+              such as association rule mining, classification, and clustering.
+              <br /><br />
+              Knowledge Representation and Discovery: This component is
+              responsible for representing the knowledge discovered by the data
+              mining engine in a form that can be easily understood by humans.
+              <br /><br />
+              Data Visualization and Reporting: The final step in the data
+              mining process is to present the results in a meaningful way, such
+              as through graphical representations or reports.
+              <br /><br />
+              Data Mining Workflow and Management: This component is responsible
+              for managing and automating the data mining process, including
+              scheduling, monitoring and controlling the execution of data
+              mining jobs.
+              <br /><br />
+              Overall, the goal of data mining architecture is to provide a
+              robust, efficient, and flexible framework for extracting valuable
+              insights from large amounts of data.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>5.5. Profitable Applications: Data Mining Tools:</summary>
+            <br />
+            <p>
+              Data mining tools are software applications that help users
+              analyze and discover patterns in large data sets. Some popular
+              data mining tools include: <br /><br />
+              IBM SPSS Modeler<br /><br />
+              RapidMiner<br /><br />
+              KNIME<br /><br />
+              Orange<br /><br />
+              Weka<br /><br />
+              Rattle GUI<br /><br />
+              Alteryx<br /><br />
+              SAS Enterprise Miner<br /><br />
+              Microsoft SQL Server Analysis Services<br /><br />
+              Tableau<br /><br />
+              These tools typically include features such as data visualization,
+              data preprocessing, model building and evaluation, and deployment.
+              Some of these tools also have built-in algorithms for common data
+              mining tasks such as association rule mining, clustering, and
+              classification. The choice of data mining tool depends on the
+              specific requirements of a project and the skill level of the
+              users.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+        </details>
+      </div>
+      <div class="unitNo6">
+        <details>
+          <summary>6 6. Data Mining Techniques</summary>
+          <details>
+            <summary>6 6. Data Mining Techniques</summary>
+            <br />
+            <p>
+              Data mining techniques are the methods used to extract useful
+              information from large datasets. There are several different types
+              of data mining techniques, including: <br /><br />
+              Association rule mining: This technique is used to identify
+              relationships between items in a dataset, such as items that are
+              frequently purchased together in a retail store.
+              <br /><br />
+              Clustering: This technique is used to group similar data points
+              together, based on their characteristics.
+              <br /><br />
+              Classification: This technique is used to predict the class or
+              category of an item, based on its characteristics.
+              <br /><br />
+              Anomaly detection: This technique is used to identify data points
+              that do not conform to the general pattern in the dataset.
+              <br /><br />
+              Sequential pattern mining: This technique is used to identify
+              patterns in sequences of data, such as customer purchase history.
+              <br /><br />
+              Time series analysis: This technique is used to analyze trends and
+              patterns over time.
+              <br /><br />
+              Text mining: This technique is used to extract useful information
+              from unstructured text data, such as social media posts or
+              customer reviews.
+              <br /><br />
+              These are some of the most common data mining techniques, but
+              there are many others as well. The choice of technique depends on
+              the type of data and the specific business problem that needs to
+              be solved.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              6.1. An Overview: Introduction, Data Mining, Data Mining Versus
+              Database Management System,
+            </summary>
+            <br />
+            <p>
+              Data Mining Versus Machine Learning, Data Mining Tasks, Data
+              Mining Functionalities, Data Mining Techniques, Data Mining
+              Applications. <br /><br />
+              Data mining is the process of discovering patterns, relationships
+              and insights from large data sets. It is used to extract useful
+              information from raw data and transform it into an understandable
+              structure for further use. Data mining techniques are used to
+              identify patterns and trends in data and use them to make
+              predictions about future events.
+              <br /><br />
+              Data mining is different from a database management system (DBMS)
+              in that it is focused on finding patterns and relationships in
+              data, while a DBMS is focused on storing and managing data. Data
+              mining is also different from machine learning, which is a subset
+              of artificial intelligence (AI) that focuses on developing systems
+              that can learn from data and make predictions or decisions without
+              being explicitly programmed.
+              <br /><br />
+              Data mining tasks include classification, clustering, association
+              rule mining, anomaly detection, and prediction. Data mining
+              functionalities include data exploration, data cleaning, data
+              integration, data reduction, data transformation, and data mining.
+              <br /><br />
+              Data mining techniques include decision trees, neural networks,
+              association rules, k-means, and Apriori algorithm. Data mining
+              applications include customer relationship management, market
+              segmentation, fraud detection, and text mining.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              6.2. Data Mining Techniques- Association rules( Apriori, FP Tree
+              algorithms)
+            </summary>
+            <br />
+            <p>
+              , Classification (Decision Tree, Naive Bayes, Neural Network,
+              SVM), Clustering (K-means, Hierarchical Clustering, DBSCAN),
+              Anomaly detection and Sequential Patterns.<br /><br />
+              Data mining is a process of discovering patterns and knowledge
+              from large data sets. It is a multidisciplinary field that
+              involves methods from statistics, machine learning, databases, and
+              visualization. Data mining is often used in conjunction with data
+              warehousing to extract useful information from large data sets.
+              Data mining techniques can be divided into four main categories:
+              association rules, classification, clustering, and anomaly
+              detection.
+              <br /><br />
+              Association rules are used to discover relationships between
+              variables in large data sets. The Apriori and FP Tree algorithms
+              are commonly used for association rule mining.
+              <br /><br />
+              Classification is the process of identifying which group a new
+              observation belongs to based on training data. Decision tree,
+              Naive Bayes, Neural Network, and SVM are common classification
+              algorithms.
+              <br /><br />
+              Clustering is used to group similar observations together.
+              K-means, Hierarchical Clustering, and DBSCAN are common clustering
+              algorithms.
+              <br /><br />
+              Anomaly detection is used to identify unusual or abnormal
+              observations in large data sets. Sequential Patterns are used to
+              discover patterns or trends over time.
+              <br /><br />
+              Data mining tools such as WEKA, RapidMiner, KNIME, and Orange are
+              widely used for data mining tasks.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              6.3. Classification (Decision Tree induction, Bayesian
+              classification, SVM, KNN)
+            </summary>
+            <br />
+            <p>
+              Clustering (K-means, Hierarchical clustering, DBSCAN) <br /><br />
+              Data mining techniques are used to extract valuable information
+              from large datasets. Association rules mining is a technique used
+              to find relationships between items in a dataset. Apriori and FP
+              Tree algorithms are commonly used association rule mining
+              algorithms. Classification is a data mining technique used to
+              predict the class or category of a given data instance based on a
+              set of features. Decision tree induction, Bayesian classification,
+              Support Vector Machines (SVM), and k-nearest neighbors (KNN) are
+              popular classification algorithms. Clustering is a data mining
+              technique used to group similar data instances together. K-means,
+              Hierarchical clustering, and DBSCAN are popular clustering
+              algorithms.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>6.4. Clustering, Neural networks.</summary>
+            <br />
+            <p>
+              Clustering is a data mining technique that groups similar data
+              points together. It is used to find patterns and relationships in
+              data that are not immediately obvious. The most popular clustering
+              algorithms include K-means, Hierarchical clustering, and DBSCAN.
+              <br /><br />
+              Neural networks, also known as artificial neural networks, are a
+              set of algorithms that are modeled after the structure and
+              function of the human brain. They are used to recognize patterns
+              and relationships in data, and are particularly useful for tasks
+              such as image and speech recognition. Some popular neural network
+              architectures include feedforward neural networks, recurrent
+              neural networks, and convolutional neural networks.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              6.5. Evaluating Association rules , Classification model
+            </summary>
+            <br />
+            <p>
+              Evaluating association rules involves measuring the quality of the
+              rules generated by the association rule mining algorithm. Some
+              commonly used measures include support, confidence, and lift.
+              Support measures the number of times the itemset appears in the
+              dataset, while confidence measures the probability of the rule's
+              conclusion being true given the premise. Lift measures the
+              increase in the probability of the conclusion being true, given
+              the premise, compared to the probability of the conclusion being
+              true in general. <br /><br />
+              Evaluating a classification model involves measuring the accuracy
+              of the model's predictions. Some commonly used measures include
+              accuracy, precision, recall, and F1-score. Accuracy measures the
+              proportion of correct predictions, precision measures the
+              proportion of true positive predictions among all positive
+              predictions, recall measures the proportion of true positive
+              predictions among all actual positive instances, and the F1-score
+              is the harmonic mean of precision and recall. Additionally,
+              Receiver Operating Characteristic (ROC) curve is used to evaluate
+              the model performance.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+        </details>
+      </div>
+      <div class="unitNo7">
+        <details>
+          <summary>7 7. Clustering</summary>
+          <details>
+            <summary>7 7. Clustering</summary>
+            <br />
+            <p>
+              Evaluating clustering models is a bit different than evaluating
+              association rules or classification models. Some common methods
+              used to evaluate clustering models include: <br /><br />
+              Internal evaluation: This method uses the information within the
+              data set to evaluate the model. Some common internal evaluation
+              metrics used in clustering include:
+              <br /><br />
+              Silhouette Coefficient: measures the similarity of a data point to
+              its own cluster compared to other clusters<br /><br />
+              Davies-Bouldin Index: measures the similarity between each cluster
+              and its closest neighbors<br /><br />
+              Calinski-Harabasz Index: measures the ratio of the
+              between-clusters variance to the within-cluster variance<br /><br />
+              External evaluation: This method uses external information, such
+              as known class labels, to evaluate the model. Some common external
+              evaluation metrics used in clustering include:
+              <br /><br />
+              Adjusted Rand Index: measures the similarity between two
+              clusterings<br /><br />
+              Normalized Mutual Information: measures the similarity between two
+              clusterings<br /><br />
+              Fowlkes-Mallows Index: measures the geometric mean of precision
+              and recall<br /><br />
+              It's important to note that there is no single metric that is best
+              for evaluating all clustering models, and the choice of evaluation
+              metric will depend on the specific problem and data set at hand.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>7.1. Introduction to Clustering, Cluster Analysis</summary>
+            <br />
+            <p>
+              Cluster analysis, also known as clustering, is a technique used to
+              group similar objects together. The goal of clustering is to
+              divide a set of data into groups, called clusters, such that
+              objects within a cluster are more similar to each other than they
+              are to objects in other clusters. There are many different
+              algorithms and techniques used for cluster analysis, including
+              centroid-based algorithms, density-based algorithms, and
+              hierarchical algorithms. Each technique has its own advantages and
+              disadvantages, and the choice of which technique to use will
+              depend on the specific application and the type of data being
+              analyzed.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              7.2. Clustering Methods- K means, Hierarchical clustering,
+              Agglomerative clustering, Divisive clustering,
+            </summary>
+            <br />
+            <p>K means:<br /><br />
+              K means is a centroid-based clustering algorithm that groups similar data points together based on their distance to a centroid (a point representing the center of a cluster). The algorithm starts by randomly selecting k centroids, where k is the number of clusters desired, and then assigns each data point to the cluster with the closest centroid. The algorithm then iteratively updates the centroids and reassigns data points until the centroids no longer move or the algorithm reaches a maximum number of iterations.
+              <br /><br />
+              Hierarchical clustering:
+              Hierarchical clustering is a method that groups data points together based on their similarity, creating a hierarchy of clusters. There are two types of hierarchical clustering: agglomerative and divisive.
+              <br /><br />
+              Agglomerative clustering:
+              Agglomerative clustering is a bottom-up approach to hierarchical clustering. It starts by treating each data point as its own cluster and then iteratively merges the closest clusters together until all data points are in one cluster or a specific number of clusters is reached.
+              <br /><br />
+              Divisive clustering:
+              Divisive clustering is the opposite of agglomerative clustering. It starts with all data points in one cluster and then iteratively splits the cluster into smaller clusters until each data point is in its own cluster or a specific number of clusters is reached.
+              <br /><br />
+              Both hierarchical clustering methods can be visualized using a dendrogram, which shows the hierarchical structure of the clusters and the similarity between data points.</p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>7.3. clustering and segmentation software</summary>
+            <br />
+            <p>
+              Clustering and segmentation software are tools that help users
+              analyze and understand large and complex data sets by grouping
+              similar data points together. These tools can be used for a
+              variety of applications such as market segmentation, customer
+              profiling, image segmentation and more. Some popular clustering
+              and segmentation software include R, SAS, SPSS, MATLAB, and Weka.
+              These software packages typically include a variety of clustering
+              algorithms, such as k-means, hierarchical clustering, and
+              density-based clustering, as well as visualization tools to help
+              users understand the results of their analysis. Additionally, many
+              software packages also offer integration with other data analysis
+              and visualization tools, such as data mining and machine learning,
+              to provide users with a comprehensive data analysis solution.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>7.4. Evaluating clusters</summary>
+            <br />
+            <p>
+              Evaluating clusters is an important step in the clustering
+              process. It helps to determine the quality and effectiveness of
+              the clusters generated by the algorithm. There are several
+              techniques that can be used to evaluate clusters, including:
+              <br /><br />
+              External validation: This technique compares the clusters
+              generated by the algorithm with external data, such as known class
+              labels or external criteria.
+              <br /><br />
+              Internal validation: This technique uses information from the data
+              itself, such as the cluster cohesion and separation, to evaluate
+              the quality of the clusters.
+              <br /><br />
+              Graphical representation: This technique uses visualization
+              techniques, such as scatter plots, to visually inspect the
+              clusters and evaluate their quality.
+              <br /><br />
+              Silhouette analysis: This technique measures the similarity of
+              each data point to its own cluster compared to other clusters.
+              <br /><br />
+              Davies-Bouldin index: This technique measures the similarity
+              between each cluster and its most similar cluster.
+              <br /><br />
+              These are some of the most commonly used techniques for evaluating
+              clusters, and the best technique to use will depend on the
+              specific application and the characteristics of the data.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>7.5. Data Mining trends and Applications</summary>
+            <br />
+            <p>
+              Data Mining trends refer to the latest developments and
+              advancements in the field of data mining. Some of the current
+              trends in data mining include: <br /><br />
+              Big Data: With the increasing amount of data being generated, data
+              mining techniques are being used to handle large datasets and
+              extract valuable insights from them.
+              <br /><br />
+              Cloud-based data mining: Cloud computing has made it possible for
+              data mining to be performed on a large scale, with the ability to
+              process data in real-time.
+              <br /><br />
+              Machine learning: Data mining is increasingly being used in
+              combination with machine learning techniques to analyze complex
+              datasets.
+              <br /><br />
+              Deep learning: Deep learning techniques such as neural networks
+              are being used to extract patterns and insights from big data.
+              <br /><br />
+              Real-time analytics: With the advent of IoT and other real-time
+              data sources, data mining techniques are being used to analyze
+              data in real-time.
+              <br /><br />
+              Applications of data mining include:
+              <br /><br />
+              Marketing: Data mining is used to analyze customer data and
+              identify patterns that can be used to target marketing campaigns.
+              <br /><br />
+              Fraud detection: Data mining is used to identify patterns of
+              fraudulent behavior in financial transactions.
+              <br /><br />
+              Healthcare: Data mining is used to identify patterns in medical
+              data that can help improve patient outcomes.
+              <br /><br />
+              Retail: Data mining is used to analyze sales data and identify
+              patterns that can be used to optimize inventory and pricing.
+              <br /><br />
+              Telecommunications: Data mining is used to analyze customer data
+              and identify patterns that can be used to improve customer
+              service.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+        </details>
+      </div>
+      <div class="unitNo8">
+        <details>
+          <summary>8 8. Web Mining</summary>
+          <details>
+            <summary>8 8. Web Mining</summary>
+            <br />
+            <p>
+              Web mining is the process of using data mining techniques to
+              discover patterns and knowledge from web data, which includes web
+              content, web structure, and web usage data. There are three main
+              types of web mining: web content mining, web structure mining, and
+              web usage mining. <br /><br />
+              Web content mining involves extracting useful information from web
+              pages, such as text, images, and multimedia. This can be used for
+              tasks such as text classification, sentiment analysis, and entity
+              recognition.
+              <br /><br />
+              Web structure mining involves analyzing the relationships between
+              web pages, such as links between pages. This can be used for tasks
+              such as web page categorization and link analysis.
+              <br /><br />
+              Web usage mining involves analyzing the behavior of web users,
+              such as their browsing history, clicks, and search queries. This
+              can be used for tasks such as user profiling, web personalization,
+              and customer segmentation.
+              <br /><br />
+              Web mining can be used in a variety of applications, such as web
+              search, e-commerce, online advertising, and customer relationship
+              management.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>8.1. Introduction, Terminologies</summary>
+            <br />
+            <p>
+              Web mining is the process of discovering and extracting useful
+              information from the World Wide Web. It involves the use of
+              various techniques, such as data mining, text mining, and web
+              analytics, to extract knowledge from web data sources, such as web
+              pages, hyperlinks, and user sessions. Some key terminologies in
+              web mining include: <br /><br />
+              Web content mining: The process of extracting useful information
+              from web pages, such as text, images, and videos.
+              <br /><br />
+              Web structure mining: The process of discovering patterns and
+              relationships in the structure of web pages, such as hyperlinks
+              and web page hierarchies.
+              <br /><br />
+              Web usage mining: The process of discovering patterns and trends
+              in web user behavior, such as c<br /><br />lickstream data and
+              session data. <br /><br />
+              Web opinion mining: The process of discovering opinions and
+              sentiments from web data sources, such as social media and online
+              reviews.
+              <br /><br />
+              Overall, web mining is a rapidly growing field that has many
+              potential applications, such as search engine optimization,
+              personalized recommendations, and web-based market research.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              8.2. Categories of Web Mining: Web Content Mining, Web Structure
+              Mining, Web Usage Mining
+            </summary>
+            <br />
+            <p>
+              Web Content Mining: Extracting useful information from the content
+              of web pages, such as text, images, and videos. <br /><br />
+              Web Structure Mining: Analyzing the structure of a website, such
+              as links between pages, to understand how users navigate the site.
+              <br /><br />
+              Web Usage Mining: Analyzing the behavior of users on a website,
+              such as clicks, page views, and time spent on the site, to
+              understand how users interact with the site and identify patterns
+              of behavior. This can be used to improve website design, increase
+              user engagement and revenue.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              8.3. Applications of Web Mining, and Agent based and Database
+              approaches, Web mining Software/Tools.
+            </summary>
+            <br />
+            <p>
+              Web Content Mining: It is the process of extracting useful
+              information from the web content. This includes extracting text,
+              images, videos, etc. from the web pages. The extracted information
+              can then be used for various purposes such as text summarization,
+              information retrieval, sentiment analysis, etc. <br /><br />
+              Web Structure Mining: It is the process of extracting information
+              about the structure of the web. This includes extracting
+              information about the links between web pages, the hierarchy of
+              web pages, etc. This information can then be used for various
+              purposes such as web page ranking, web page clustering, etc.
+              <br /><br />
+              Web Usage Mining: It is the process of extracting information
+              about how users interact with the web. This includes extracting
+              information about user behavior, user preferences, etc. This
+              information can then be used for various purposes such as
+              personalization, targeted advertising, etc.
+              <br /><br />
+              Applications of Web Mining: Web mining can be used for various
+              applications such as web search, personalization, e-commerce,
+              marketing, etc.
+              <br /><br />
+              Agent based and Database approaches: Web mining can be performed
+              using either agent-based or database approaches. Agent-based
+              approaches involve using software agents to perform web mining
+              tasks, whereas database approaches involve using databases to
+              store and process web mining data.
+              <br /><br />
+              Web mining Software/Tools: There are various software and tools
+              available for web mining such as WEKA, RapidMiner, KNIME, Orange,
+              etc. These tools can be used for various web mining tasks such as
+              data pre-processing, data mining, and data visualization.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              8.4. Text Mining: process and types, steps in Text Mining,
+              applications and tools of Text Mining
+            </summary>
+            <br />
+            <p>
+              Text mining, also known as text data mining, is the process of
+              extracting meaningful and useful information from unstructured or
+              semi-structured text data. The process involves several steps,
+              including text pre-processing, tokenization, feature extraction,
+              and modeling. <br /><br />
+              There are several types of text mining, including:
+              <br /><br />
+              Information retrieval: the process of searching for relevant
+              documents or information based on a query<br /><br />
+              Text classification: the process of automatically assigning
+              predefined categories or labels to text<br /><br />
+              Text clustering: the process of grouping similar documents
+              together based on their content<br /><br />
+              Text summarization: the process of creating a concise summary of a
+              document or set of documents<br /><br />
+              Sentiment analysis: the process of determining the emotional tone
+              or opinion of text<br /><br />
+              Applications of text mining include:
+              <br /><br />
+              Opinion mining and sentiment analysis, used to understand customer
+              feedback and social media posts<br /><br />
+              Information retrieval, used to improve search results and
+              query-based systems<br /><br />
+              Text classification, used to automatically categorize and sort
+              documents<br /><br />
+              Text summarization, used to create summaries of large amounts of
+              text<br /><br />
+              Text analytics, used to extract insights from unstructured text
+              data<br /><br />
+              There are various tools and software available for text mining
+              such as Rapidminer, Weka, SAS, KNIME, RapidMiner, Orange, and R.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+          <details>
+            <summary>
+              8.5. Data visualization, Dashboard- KPI, Business Intelligence and
+              its future.
+            </summary>
+            <br />
+            <p>
+              Data visualization is the process of representing data in a visual
+              format, such as charts, graphs, maps, and diagrams. This allows
+              people to quickly understand and interpret large and complex
+              datasets. Dashboards are a type of data visualization that display
+              key performance indicators (KPIs) in real-time, making it easy to
+              monitor and track business performance. <br /><br />
+              Business Intelligence (BI) is the process of collecting,
+              analyzing, and presenting business data to support
+              decision-making. BI systems often include data visualization
+              tools, data warehousing, and analytics capabilities. The future of
+              BI is likely to see an increased focus on real-time data, advanced
+              analytics, and the use of artificial intelligence and machine
+              learning to enhance decision-making capabilities. Additionally,
+              the increasing prevalence of big data and cloud computing will
+              make it easier for organizations of all sizes to access and use BI
+              tools.
+            </p>
+            <br /><br /><br />
+          </details>
+          <br />
+        </details>
+      </div>
     </section>
-    <br><br><br><br>
+
+    <!--  -->
+    <!-- unitNo4 -->
+    <div class="unitNo5">
+      <details>
+        <summary>4. Deep Learning</summary>
+        <br>
+        <details>
+          <br>
+          <summary></summary>
+          <br />
+          <p></p>
+          <br /><br /><br />
+        </details>
+        <br />
+      </details>
+    </div>
+    <!--  -->
+    <br /><br /><br /><br />
     <footer class="top-banner">
       <div class="container">
         <div class="small-bold-text banner-text">
